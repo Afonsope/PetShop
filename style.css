@@ -1,0 +1,157 @@
+@media only screen and (max-width: 767px) {
+    .navegation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px;
+        padding-left: 0;
+    }
+
+    .tosa {
+        width: 300px;
+        height: auto;
+    }
+
+    .social-container {
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .conteudo .direita,
+    .conteudo .meio,
+    .conteudo .esquerda {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .conteudo .direita .fofo,
+    .conteudo .meio .foto-meio,
+    .conteudo .esquerda .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo .meio .tres-cachorro {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .logo {
+        width: 180px;
+    }
+
+    .tosa {
+        width: 350px;
+        height: auto;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .conteudo .direita,
+    .conteudo .meio,
+    .conteudo .esquerda {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .conteudo .direita .fofo,
+    .conteudo .meio .foto-meio,
+    .conteudo .esquerda .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo .meio .tres-cachorro {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .logo {
+        width: 200px;
+    }
+
+    .tosa {
+        width: 400px;
+        height: auto;
+    }
+
+    .conteudo {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .conteudo .direita,
+    .conteudo .meio,
+    .conteudo .esquerda {
+        padding: 20px;
+        width: 30%;
+    }
+
+    .conteudo .direita .fofo,
+    .conteudo .meio .foto-meio,
+    .conteudo .esquerda .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo .meio .tres-cachorro {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* @media only screen and (min-width: 1200px) {
+    .logo {
+        width: 220px;
+    }
+
+    .tosa {
+        width: 450px;
+        height: auto;
+    }
+
+    .conteudo {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 25px;
+    }
+
+    .conteudo .direita,
+    .conteudo .meio,
+    .conteudo .esquerda {
+        padding: 25px;
+        width: 30%;
+    }
+
+    .conteudo .direita .fofo,
+    .conteudo .meio .foto-meio,
+    .conteudo .esquerda .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo .meio .tres-cachorro {
+        flex-direction: row;
+        justify-content: space-between;
+    }*/
+
+    
+   
+    

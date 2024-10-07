@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navegation">
+        <img src="./img/Logo_Petshop_marrom_ilustrado-removebg-preview.png" alt="logo" class="logo">
+
+        <img src="./img/Promoção Tosa Higiênica.png" alt="Tosa" class="tosa">
+
+        <div class="social-container">
+
+            <div class="nos-acompanhe">
+                <a href="boletim.html"><button class="assinatura">Assine o boletim anual</button></a>
+                <p>Nos acompanhe:</p>
+            </div>
+
+            <ul>
+                <li><a href="https://www.facebook.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new" /></a></li>
+                <li><a href="https://x.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a></li>
+                <li><a href="https://www.youtube.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/youtube-squared.png" alt="youtube-squared" /></a></li>
+                <li><a href="https://br.pinterest.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/pinterest--v1.png" alt="pinterest--v1" /></a></li>
+                <li><a href="https://www.instagram.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .navegation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .tosa {
+            width: 400px;
+            height: 175px;
+            border-radius: 10px;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 20px;
+        }
+
+        .nos-acompanhe {
+            text-align: right;
+        }
+
+        .assinatura {
+            padding: 10px 15px;
+            color: red;
+            background-color: #fff;
+            border: 1px solid red;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .assinatura:hover {
+            background-color: red;
+            color: #fff;
+        }
+
+        .social-container ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .social-container ul li {
+            margin: 0 5px;
+        }
+
+        .social-container ul li img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-container ul li img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .home {
+            background-color: rgb(140, 140, 140);
+        }
+
+        nav ul a:hover {
+            background-color: #683535;
+        }
+
+        </style>
+
+    </div>
+
+    <nav class="links" style="margin-bottom: 15px;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="banho-e-tosa.html" class="home">Banho e tosa</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <h1 class="fonte" style="margin-bottom: 10px; margin-left: 720px;">Agendamento Banho e Tosa</h1>
+
+    <div style="display: flex; align-items: center; margin-left: 690px;margin-top: -10px;">
+        <img src="img/icone atenção.gif" alt="Ícone de localização" style="height: 35px; margin-left: 10px;">
+        <p class="fonte" style="font-weight: bold; color: red; margin-left: 5px; font-size: 20px;">
+            Agendamento com <b style="color:black;">48</b> horas de antecedência
+        </p>
+    </div>
+    <div class="link-login">
+        <a href="login.html">Já tenho cadastro</a>
+    </div>
+
+
+
+    <div class="form1" style="margin-top: -5px;">
+        <button class="button" style="margin-left:780px ;margin-bottom: 10px;margin-top: 10px;">CADASTRO DO
+            TUTOR</button><br>
+
+        <form method="get" class="form2" style="margin-left:590px;" name="formCadastro"
+            onsubmit="return validarFormulario()">
+            <label for="txt_nome">Nome:</label>
+            <input type="text" name="txt_nome"><br>
+
+            <label for="txt_email">Email:</label>
+            <input type="email" name="txt_email"><br>
+
+            <label for="txt_senha">Senha:</label>
+            <input type="password" name="txt_senha" id="senha" oninput="validarSenha()">
+            <p id="mensagem-senha"></p><br>
+
+            <label for="txt_endereco">Endereço:</label>
+            <input type="text" name="txt_endereco"><br>
+
+            <label for="txt_cep">CEP:</label>
+            <input type="text" name="txt_cep"><br>
+
+            <label for="txt_tel">Telefone:</label>
+            <input type="text" name="txt_tel"><br>
+
+
+        </form>
+
+
+        <script>
+
+            function validarSenha() {
+                var senha = document.getElementById('senha').value;
+                var mensagem = document.getElementById('mensagem-senha');
+
+                // Defina seus critérios de validação aqui
+                var regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+
+                if (senha.match(regex)) {
+                    mensagem.style.color = 'green';
+                    mensagem.textContent = 'Senha válida!';
+                } else {
+                    mensagem.style.color = 'red';
+                    mensagem.textContent = 'A senha deve conter pelo menos 8 caracteres, incluindo pelo menos 1 letra maiúscula, 1 letra minúscula, 1 número e 1 caracter especial';
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var sabadoRadio = document.getElementById('sabado');
+                var mensagemAgendaCheia = document.getElementById('mensagemAgendaCheia');
+
+                sabadoRadio.addEventListener('change', function () {
+                    if (this.checked) {
+                        mensagemAgendaCheia.style.display = 'block';
+                    } else {
+                        mensagemAgendaCheia.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+
+
+
+
+        <br>
+        <button class="button" style="margin-left:850px;margin-bottom: 5px;">Animal</button>
+        <form method="get" class="form2" style="width: autopx; margin-left: 590px;">
+            <div class="form-group" style="margin-bottom: 10px;margin-right: px;">
+                <label for="lbl_nome_animal" style="margin-left:px; display: block; margin-bottom: px;">Nome:</label>
+                <input type="text" name="txt_nome_animal" id="lbl_nome_animal"
+                    style="border: 1px solid black; width: 100%;font-size: 18px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="tipoTosa" style="display: block; margin-bottom: 5px;">Tosas:</label>
+                <select id="tipoTosa" name="tipoTosa" class="input"
+                    style="border: 1px solid black; width: 100%; font-size: 18px;">
+                    <option value="" style="color:white;background-color: grey"></option>
+                    <option value="tosa-higienica" style="color:white;background-color: grey">Tosa Higiênica - R$
+                        60,00
+                    </option>
+                    <option value="tosa-completa" style="color:white;background-color: grey">Tosa Completa - R$
+                        100,00
+                    </option>
+                    <option value="tosa-filhote" style="color:white;background-color: grey">Tosa de Filhote - R$
+                        80,00
+                    </option>
+                    <option value="tosa-verao" style="color:white;background-color: grey">Tosa de Verão - R$ 70,00
+                    </option>
+                    <option value="tosa-raca" style="color:white;background-color: grey">Tosa de Raça - R$ 120,00
+                    </option>
+                    <option value="tosa-raspada" style="color:white;background-color: grey">Tosa Raspada - R$ 60,00
+                    </option>
+                    <option value="tosa-comercial" style="color:white;background-color: grey">Tosa Comercial - R$
+                        70,00
+                    </option>
+                    <option value="tosa-estetica" style="color:white;background-color: grey">Tosa Estética - R$
+                        150,00
+                    </option>
+
+                </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;padding-bottom: 10px;">
+                <label for="lbl_porte" style="display: block; margin-bottom: 5px;margin-left: 52px;">Porte do
+                    cão:</label>
+                <div class="input-group" style="display: flex; justify-content: space-between;margin-left:-19px;">
+                    <label><input type="radio" name="rdi" id="1"> Pequeno</label>
+                    <label style="margin-left:-8px;"><input type="radio" name="rdi" id="2"> Médio</label>
+                    <label><input type="radio" name="rdi" id="3"> Grande</label>
+                </div>
+            </div>
+            <div class="form-group" style="margin-bottom: 10px;">
+                <label for="lbl_focinheira"
+                    style="display: block; margin-bottom: 5px;margin-left: 35px;">Focinheira:</label>
+                <div class="input-group" style="display: flex;">
+                    <label style="flex: 2;display: flex; align-items: center;"><input type="radio" name="focinheira"
+                            id="necessario"> Necessário</label>
+                    <label style="flex: 2; margin-left: 20px;display: flex;align-items: center;"><input type="radio"
+                            name="focinheira" id="desnecessario"> Desnecessário</label>
+                </div>
+            </div>
+
+            <div class="opcoes" style="padding-left: 90px; padding-bottom: 10px;"><br>
+
+                <div class="opcao" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="none" name="servicos" value="none">
+                    <label for="none">Nenhum Serviço Adicional</label>
+                </div>
+
+                <div class="opcao" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="banho" name="servicos" value="banho">
+                    <label for="banho">Banho - R$ 50,00</label>
+                </div>
+
+                <div class="opcao" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="corte-unhas" name="servicos" value="corte-unhas">
+                    <label for="corte-unhas">Corte de Unhas - R$ 20,00</label>
+                </div>
+
+                <div class="opcao" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="limpeza-ouvidos" name="servicos" value="limpeza-ouvidos">
+                    <label for="limpeza-ouvidos">Limpeza de Ouvidos - R$ 30,00</label>
+                </div>
+
+                <div class="opcao" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="escovacao-dentes" name="servicos" value="escovacao-dentes">
+                    <label for="escovacao-dentes">Escovação de Dentes - R$ 30,00</label>
+                </div>
+
+                <div class="opcao" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="desembaraco" name="servicos" value="desembaraco">
+                    <label for="desembaraco">Desembaraçamento - R$ 80,00</label>
+                </div>
+
+                <div class="opcao" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="deslanagem" name="servicos" value="deslanagem">
+                    <label for="deslanagem">Deslanagem - R$ 85,00</label>
+                </div>
+
+                <div class="opcao" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="vacina" name="servicos" value="vacina">
+                    <label for="vacina">Vacinação - R$ 100,00</label>
+                </div>
+
+                <div class="opcao" style="margin-bottom: 10px;">
+                    <input type="checkbox" id="consulta" name="servicos" value="consulta">
+                    <label for="consulta">Consulta - R$ 150,00</label>
+                </div>
+            </div>
+            <p style="margin-left: 55px;margin-top: 5px;">Observações:</p>
+            <div class="form-group" style="margin-bottom: 15px; margin-left: 45px; margin-top: -15px;">
+                <textarea name="txa_obs" id="lbl_obs" cols="30" rows="10" class="input"
+                    style="width: 100%; font-size: 18px;"></textarea>
+            </div>
+
+        </form>
+
+
+        <br>
+        <button class="button" style="margin-left: 630px;margin-bottom: 10px;">Horário - (Não atendemos de Domingo e
+            Segunda-Feira)</button>
+
+        <form method="get" class="form2" id="ultimo" style="margin-left: 590px;">
+            <br>
+            <label for="lbl_dia" style="margin-left: 15px; font-size: 18px;">Selecione o dia de sua preferência</label>
+            <br>
+            <div style="display: flex; justify-content: space-around;">
+                <label for="terca"><input type="radio" name="rdi_dia" id="terca">Terça-Feira</label>
+                <label for="quarta"><input type="radio" name="rdi_dia" id="quarta">Quarta-Feira</label>
+                <label for="quinta"><input type="radio" name="rdi_dia" id="quinta">Quinta-feira</label>
+                <label for="sexta"><input type="radio" name="rdi_dia" id="sexta">Sexta-Feira</label>
+                <label for="sabado"><input type="radio" name="rdi_dia" id="sabado">Sábado</label>
+            </div>
+            <br>
+            <div id="mensagemAgendaCheia" style="display: none; color: red;">
+                Desculpe, a agenda de Sábado está cheia. Por favor, selecione outro dia.
+            </div>
+            <br>
+            <label for="lbl_opn1">Escolha a Primeira opção de horário:</label>
+            <input type="time" name="time_1" id="time_1" min="08:00" max="18:00">
+            <label for="lbl_opn2">Escolha a Segunda opção de horário:</label>
+            <input type="time" name="time_2" id="time_2" min="08:00" max="18:00">
+        </form>
+
+
+        <br>
+
+        <div class="btn-enviar">
+            <a href="obrigado.html">
+                <button class="button-enviar">
+                    ENVIAR
+                    <img src="img/icone enviar.png" alt="icone enviar">
+                </button>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Atendimento: atendimento@afonsopetshop.com • (0XX) 99999-9999 / (0XX) 88888-8888</p>
+    </footer>
+
+    <style>
+        .link-login a {
+            text-decoration: underline;
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 1700px;
+            font-size: 20px;
+        }
+
+        .link-login a:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: overline;
+        }
+
+        .btn-enviar {
+            padding-right: 10px;
+        }
+
+        .btn-enviar a {
+            text-decoration: none;
+        }
+
+        .button-enviar {
+            margin-left: 800px;
+            background-color: rgb(16, 236, 16);
+            cursor: pointer;
+            border: 0.5px solid black;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            padding: 10px 50px;
+            border-radius: 10px;
+        }
+
+        .button-enviar img {
+            height: 25px;
+            width: auto;
+            margin-left: 10px;
+
+        }
+
+        .button-enviar:hover {
+            color: rgb(0, 0, 0);
+            border-color: rgb(163, 8, 2);
+            transform: scale(1.0);
+            background: linear-gradient(45deg, rgb(174, 24, 8), rgb(237, 255, 228));
+            /*transform: rotate(100deg); rotação do elemento*/
+        }
+
+        .form2 {
+            /*cadastro do tutor*/
+            display: flex;
+            flex-direction: column;
+            max-width: 650px;
+            padding: 10px;
+            margin-left: 800px;
+            margin-top: 10px;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            width: 130px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            flex: 1;
+        }
+
+        .form-group .input-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .form-group .input-group input {
+            /*distancia entre os radios do porte*/
+            margin-right: 15px;
+        }
+
+        .fonte {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .button {
+            font-size: 20px;
+            color: #880000;
+            background-color: #ffffff;
+            padding: 10px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            border: 3px solid black;
+            margin-right: 20px;
+        }
+
+
+        .form1 {
+            background-color: rgb(155, 0, 0);
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+
+        .form2 {
+            margin-right: 856px;
+            /*Alinhar o form na tela*/
+            background-color: white;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        .input {
+            margin: 5px;
+        }
+
+        .arrrumar {
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            color: #fff;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 40px;
+            margin-top: 50px;
+            /* Ajustar a margem para o footer */
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffffff, #ffffff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .navegation {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .tosa {
+            width: 400px;
+            height: 175px;
+        }
+
+        .social-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+
+        .nos-acompanhe {
+            padding-right: 37px;
+        }
+
+        .assinatura {
+            padding: 5px;
+            color: red;
+            background-color: #fff;
+            border-color: red;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .social-container ul {
+            list-style: none;
+            padding-left: 0px;
+            margin-top: 1px;
+            display: flex;
+            justify-content: right;
+        }
+
+        .social-container ul li {
+            padding: 2.5px;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 500px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .login-form {
+            position: relative;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #2d3436;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #636e72;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dfe6e9;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #0984e3;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0984e3;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #74b9ff;
+        }
+
+        nav {
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            clear: both;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0px;
+            margin-top: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 8px 50px;
+            line-height: 2em;
+            display: block;
+        }
+
+        .home {
+            background-color: rgb(140, 140, 140);
+        }
+
+        nav.links a:hover {
+            background-color: #683535;
+        }
+    </style>
+</head>
+<body>
+    <div class="navegation">
+        <img src="./img/Logo_Petshop_marrom_ilustrado-removebg-preview.png" alt="logo" class="logo">
+        <img src="./img/Promoção Tosa Higiênica.png" alt="Tosa" class="tosa">
+        <div class="social-container">
+            <div class="nos-acompanhe">
+                <a href="boletim.html"><button class="assinatura">Assine o boletim anual</button></a>
+                <p>Nos acompanhe:</p>
+            </div>
+            <ul>
+                <li><a href="https://www.facebook.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new" /></a></li>
+                <li><a href="https://x.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a></li>
+                <li><a href="https://www.youtube.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/youtube-squared.png" alt="youtube-squared" /></a></li>
+                <li><a href="https://br.pinterest.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/pinterest--v1.png" alt="pinterest--v1" /></a></li>
+                <li><a href="https://www.instagram.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="banho-e-tosa.html">Banho e tosa</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

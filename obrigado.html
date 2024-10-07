@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <style>
+        .button {
+            font-size: 20px;
+            color: #fff;
+            background-color: #e74c3c;
+            padding: 10px 50px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        .button:hover {
+            background-color: #c0392b;
+        }
+
+        h4 {
+            margin: 20px;
+            font-style: italic;
+        }
+
+        .highlight {
+            background-color: #fff;
+            border: 10px solid red;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .highlight img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .highlight .text {
+            flex: 1;
+        }
+
+        .highlight-content {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        footer {
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navegation">
+        <img src="./img/Logo_Petshop_marrom_ilustrado-removebg-preview.png" alt="logo" class="logo">
+
+        <img src="./img/Promoção Tosa Higiênica.png" alt="Tosa" class="tosa">
+
+        <div class="social-container">
+
+            <div class="nos-acompanhe">
+                <a href="boletim.html"><button class="assinatura">Assine o boletim anual</button></a>
+                <p>Nos acompanhe:</p>
+            </div>
+
+            <ul>
+                <li><a href="https://www.facebook.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new" /></a></li>
+                <li><a href="https://x.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a></li>
+                <li><a href="https://www.youtube.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/youtube-squared.png" alt="youtube-squared" /></a></li>
+                <li><a href="https://br.pinterest.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/pinterest--v1.png" alt="pinterest--v1" /></a></li>
+                <li><a href="https://www.instagram.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </div>
+
+    <nav class="links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="banho-e-tosa.html">Banho e tosa</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+        </div>
+    </nav>
+    <style>
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .navegation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .tosa {
+            width: 400px;
+            height: 175px;
+            border-radius: 10px;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 20px;
+        }
+
+        .nos-acompanhe {
+            text-align: right;
+        }
+
+        .assinatura {
+            padding: 10px 15px;
+            color: red;
+            background-color: #fff;
+            border: 1px solid red;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .assinatura:hover {
+            background-color: red;
+            color: #fff;
+        }
+
+        .social-container ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .social-container ul li {
+            margin: 0 5px;
+        }
+
+        .social-container ul li img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-container ul li img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .home {
+            background-color: rgb(140, 140, 140);
+        }
+
+        nav ul a:hover {
+            background-color: #683535;
+        }
+
+    </style>
+
+
+    <button class="button" style="pointer-events: none;">Seu formulário foi enviado.</button>
+
+    <h4 style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Nossa Equipe irá conferir sua solicitação e
+        enviará uma confirmação para seu email</h4>
+
+    <div class="highlight">
+        <p style="font-weight: bold;font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Aproveite agora mesmo
+            nossa dica em destaque:</p>
+        <div class="highlight-content">
+            <img src="./img/Instagram post petshop divertido roxo e laranja.png" alt="" class="img"
+                style="border: 1px solid black;">
+            <div class="text" style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;">
+                <p>O adestramento de cães é uma parte essencial para garantir a convivência harmoniosa entre os pets e
+                    seus donos. Um cão bem adestrado não só é mais obediente e fácil de lidar, mas também mais feliz e
+                    seguro. O processo de adestramento ajuda a estabelecer uma comunicação clara entre o animal e o
+                    tutor, fortalecendo o vínculo e promovendo um ambiente de confiança mútua.</p>
+
+                <p>Além disso, o adestramento é fundamental para a segurança do próprio animal e das pessoas ao seu
+                    redor. Cães que respondem a comandos básicos, como "sentar", "ficar" e "vir", são menos propensos a
+                    se colocar em situações perigosas, como correr para o meio da rua ou se envolver em brigas com
+                    outros animais. O adestramento também pode ajudar a corrigir comportamentos indesejados, como
+                    latidos excessivos, agressividade ou ansiedade.</p>
+
+                <p>Outra vantagem do adestramento é a estimulação mental que ele proporciona. Cães são animais
+                    inteligentes que necessitam de desafios e atividades para se manterem saudáveis mentalmente. Sessões
+                    de adestramento regulares oferecem essa estimulação, evitando o tédio e comportamentos destrutivos
+                    que podem surgir da falta de atividade. Portanto, investir no adestramento do seu cão é investir na
+                    qualidade de vida e bem-estar do seu amigo de quatro patas.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Atendimento: atendimento@afonsopetshop.com • (0XX) 99999-9999 / (0XX) 88888-8888</p>
+    </footer>
+</body>
+
+</html>

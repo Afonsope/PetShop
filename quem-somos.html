@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="navegation">
+        <img src="./img/Logo_Petshop_marrom_ilustrado-removebg-preview.png" alt="logo" class="logo">
+
+        <img src="./img/Promoção Tosa Higiênica.png" alt="Tosa" class="tosa">
+
+        <div class="social-container">
+
+            <div class="nos-acompanhe">
+                <a href="boletim.html"><button class="assinatura">Assine o boletim anual</button></a>
+                <p>Nos acompanhe:</p>
+            </div>
+
+            <ul>
+                <li><a href="https://www.facebook.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new" /></a></li>
+                <li><a href="https://x.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a></li>
+                <li><a href="https://www.youtube.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/youtube-squared.png" alt="youtube-squared" /></a></li>
+                <li><a href="https://br.pinterest.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/pinterest--v1.png" alt="pinterest--v1" /></a></li>
+                <li><a href="https://www.instagram.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <style>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .navegation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .tosa {
+            width: 400px;
+            height: 175px;
+            border-radius: 10px;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 20px;
+        }
+
+        .nos-acompanhe {
+            text-align: right;
+        }
+
+        .assinatura {
+            padding: 10px 15px;
+            color: red;
+            background-color: #fff;
+            border: 1px solid red;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .assinatura:hover {
+            background-color: red;
+            color: #fff;
+        }
+
+        .social-container ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .social-container ul li {
+            margin: 0 5px;
+        }
+
+        .social-container ul li img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-container ul li img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .home {
+            background-color: rgb(140, 140, 140);
+        }
+
+        nav ul a:hover {
+            background-color: #683535;
+        }
+
+        </style>
+
+    </div>
+
+    <nav class="links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html" class="home">Quem somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="banho-e-tosa.html">Banho e tosa</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+
+    <div style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 25px;margin-top: 15px;">
+        <img src="img/icone localização.png" alt="Ícone de localização" style="vertical-align: middle; height: 30px;">
+        <h3 style="display: inline; margin-left: -3px;font-size: 25px;margin-top: 10px;margin-right: 1700px;">Localização</h3>
+    
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d554.3813317405426!2d-49.37711646499296!3d-20.81481269980284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad5831426927%3A0x6f7f4d8444907cb9!2sSenac%20S%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto!5e0!3m2!1spt-BR!2sbr!4v1719420619632!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <hr>
+
+    <div class="quem-somos">
+        <img src="./img/quemsomos.jpeg" alt="" class="img">
+        <div class="text">
+            <h1 style="font-size:30px ;margin-bottom: 10px;font-family: Arial, Helvetica, sans-serif;">Quem somos?</h1>
+
+            <p style="font-family: Arial, Helvetica, sans-serif; text-align: justify;">Na <b>Afonso PetShop</b>, acreditamos que seus pets
+                são mais do que apenas animais de estimação – eles são
+                membros da família. Fundado com paixão e dedicação aos animais, o Afonso PetShop se compromete a
+                fornecer produtos e serviços da mais alta qualidade para garantir o bem-estar e a felicidade dos seus
+                companheiros de quatro patas.<br>
+
+                Nossa missão é ser o parceiro de confiança para todos os tutores de pets, oferecendo uma ampla variedade
+                de alimentos saudáveis, acessórios inovadores, brinquedos divertidos e serviços especializados que
+                atendem às necessidades específicas de cada animal. Sabemos que cada pet é único, e é por isso que
+                personalizamos nossas ofertas para garantir que você encontre exatamente o que precisa para o seu amigo
+                peludo.<br>
+
+
+                Na <b>Afonso PetShop</b>, nossa equipe é composta por amantes de animais altamente treinados e
+                comprometidos em
+                oferecer o melhor atendimento ao cliente. Estamos sempre prontos para ajudar com conselhos úteis e
+                recomendações personalizadas para que você possa tomar as melhores decisões para o bem-estar do seu
+                pet.<br>
+
+
+                Além disso, estamos empenhados em promover uma comunidade pet-friendly, organizando eventos, workshops e
+                atividades que fortalecem o vínculo entre você e seu pet. Nossa loja é um espaço acolhedor onde você e
+                seu animal de estimação se sentirão em casa.<br>
+
+
+                Venha nos visitar e descubra por que a Afonso PetShop é o lugar ideal para cuidar dos seus amados pets.
+                Aqui, tratamos seus pets com o carinho e respeito que eles merecem!</p>
+
+        </div>
+    </div>
+
+
+    <hr>
+    <button class="button">Visão</button>
+    <br>
+    <strong style="font-family: Arial, Helvetica, sans-serif;"><b><i>ANIMAIS BEM CUIDADOS, TUTORES
+                FELIZES</i></b></strong>
+    <p style="font-family: Arial, Helvetica, sans-serif;">Na <b>Afonso PetShop</b>, acreditamos firmemente que o
+        bem-estar dos animais de estimação tem um impacto direto na
+        felicidade de seus donos. Quando nossos pets estão saudáveis, felizes e bem cuidados, nós também nos sentimos
+        mais alegres e satisfeitos. Por isso, dedicamos todos os nossos esforços para garantir que cada animal que entra
+        em nossa loja receba o cuidado e a atenção que merece.<br>
+
+        Oferecemos uma seleção cuidadosamente escolhida de produtos de alta qualidade, desde alimentos nutritivos até
+        brinquedos estimulantes e acessórios confortáveis. Nossa equipe especializada está sempre pronta para fornecer
+        orientações e conselhos para ajudar você a fazer as melhores escolhas para o seu pet.<br>
+
+        Na Afonso PetShop, cuidamos dos seus pets como se fossem nossos, porque entendemos que quando nossos animais
+        estão bem, nós também estamos bem. Venha nos visitar e experimente a diferença que o cuidado excepcional pode
+        fazer na vida do seu pet e na sua.
+
+
+    </p>
+    <hr>
+
+    <button class="button">Valores</button>
+    <br>
+    <strong style="font-family: Arial, Helvetica, sans-serif;"><b><i>NOSSAS DECISÕES E COMPORTAMENTOS SÃO CUIDADOS POR NOSSOS VALORES</i></b></strong>
+    <p style="font-family: Arial, Helvetica, sans-serif;"><b>Na Afonso PetShop</b>, acreditamos que nossos valores são a base de tudo o que fazemos. Eles não apenas definem quem
+        somos como empresa, mas também orientam cada decisão que tomamos e cada comportamento que adotamos. Nosso
+        compromisso com a integridade, a excelência e o cuidado é refletido em cada aspecto de nosso serviço.<br>
+
+        Integridade: Agimos com honestidade e transparência em todas as nossas interações. Valorizamos a confiança que
+        nossos clientes depositam em nós e nos esforçamos para merecê-la todos os dias. Acreditamos que a base de
+        qualquer relacionamento sólido é a confiança mútua, e fazemos questão de ser verdadeiros e claros em todas as
+        nossas comunicações e transações.<br>
+
+        Excelência: Buscamos a excelência em tudo o que fazemos. Desde a seleção dos melhores produtos até a oferta de
+        serviços de alta qualidade, nos esforçamos para superar as expectativas dos nossos clientes. Sabemos que a
+        excelência é um processo contínuo, e estamos sempre buscando maneiras de melhorar e inovar para oferecer o
+        melhor para você e seu pet.<br>
+
+        Cuidado: O cuidado é o coração do nosso negócio. Amamos animais e estamos profundamente comprometidos com o
+        bem-estar deles. Nossos valores nos levam a tratar cada pet com carinho e respeito, como se fossem membros da
+        nossa própria família. Este cuidado se estende também aos nossos clientes, garantindo que cada experiência no
+        Afonso PetShop seja positiva e acolhedora.<br>  
+
+        Guiados por esses valores, estamos determinados a fazer a diferença na vida dos animais de estimação e de seus
+        donos. Sabemos que cada decisão que tomamos e cada ação que realizamos tem um impacto significativo, e por isso,
+        mantemos nossos valores no centro de tudo o que fazemos.</p>
+
+    <footer>
+        <p>Atendimento: atendimento@afonsopetshop.com • (0XX) 99999-9999 / (0XX) 88888-8888</p>
+    </footer>
+    <style>
+        h3 {
+            font-size: 20px;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        .img {
+            width: 300px;
+            height: auto;
+            padding: 1px;
+            display: flex;
+            justify-content: flex-start;
+            border: 4px solid black;
+            border-radius: 30px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        .quem-somos {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .button {
+            font-size: 20px;
+            color: #fff;
+            background-color: red;
+            padding: 10px 50px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            border: 4px dashed rgb(0, 0, 0);
+        }
+
+        footer {
+            color: #fff;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 40px;
+            margin-top: 50px;
+            /* Ajuste a margem para o footer */
+        }
+    </style>
+</body>
+
+</html>

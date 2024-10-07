@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .navegation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .tosa {
+            width: 400px;
+            height: 175px;
+            border-radius: 10px;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 20px;
+        }
+
+        .nos-acompanhe {
+            text-align: right;
+        }
+
+        .assinatura {
+            padding: 10px 15px;
+            color: red;
+            background-color: #fff;
+            border: 1px solid red;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .assinatura:hover {
+            background-color: red;
+            color: #fff;
+        }
+
+        .social-container ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .social-container ul li {
+            margin: 0 5px;
+        }
+
+        .social-container ul li img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-container ul li img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .home {
+            background-color: rgb(140, 140, 140);
+        }
+
+        nav ul a:hover {
+            background-color: #683535;
+        }
+
+        .conteudo {
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .direita {
+            padding-left: 20px;
+        }
+
+        .direita .fofo {
+            width: 250px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .direita .melhores-produtos {
+            width: 300px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .meio1 {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .meio {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .imagem-container {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 1s ease;
+        }
+
+        .imagem-container:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .imagem {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: transform 1s ease;
+        }
+
+        .imagem-container:hover .imagem {
+            transform: scale(1.1);
+        }
+
+        .titulo {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            margin: 0;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: bottom 1s ease;
+        }
+
+        .imagem-container:hover .titulo {
+            bottom: 100%;
+        }
+
+        .texto {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: bottom 1s ease;
+        }
+
+        .imagem-container:hover .texto {
+            bottom: 0;
+        }
+
+        .esquerda {
+            padding-right: 20px;
+            text-align: center;
+        }
+
+        .esquerda .video {
+            width: 100%;
+            max-width: 300px;
+            height: 175px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .esquerda .plano-mensal {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            color: #fff;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .conteudo h2 {
+            margin: 20px 0;
+        }
+
+        .conteudo p {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navegation">
+        <img src="./img/Logo_Petshop_marrom_ilustrado-removebg-preview.png" alt="logo" class="logo">
+        <img src="./img/Promoção Tosa Higiênica.png" alt="Tosa" class="tosa">
+        <div class="social-container">
+            <div class="nos-acompanhe">
+                <a href="boletim.html"><button class="assinatura">Assine o boletim anual</button></a>
+                <p>Nos acompanhe:</p>
+            </div>
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new" /></a></li>
+                <li><a href="https://x.com/"><img src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a></li>
+                <li><a href="https://www.youtube.com/"><img src="https://img.icons8.com/ios/50/youtube-squared.png" alt="youtube-squared" /></a></li>
+                <li><a href="https://br.pinterest.com/"><img src="https://img.icons8.com/ios/50/pinterest--v1.png" alt="pinterest--v1" /></a></li>
+                <li><a href="https://www.instagram.com/"><img src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1" /></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="links">
+        <ul>
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="banho-e-tosa.html">Banho e tosa</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <div class="conteudo">
+        <div class="direita">
+            <img src="./img/cachorro-fofo.jpeg" alt="cachorro fofo" class="fofo">
+            <audio controls autoplay>
+                <source src="./audio/Cachorros-LATINDO-ALTO-__-_Veja-como-seu-CÃO-REAGE_.mp3" type="audio/mpeg">
+            </audio>
+            <img src="./img/melhores-produtos.png" alt="melhores produtos" class="melhores-produtos">
+        </div>
+
+        <div class="meio1">
+            <div class="meio">
+                <div class="imagem-container">
+                    <img src="./img/bonito.jpeg" alt="Brincadeiras" class="imagem">
+                    <h2 class="titulo">BRINCADEIRAS</h2>
+                    <div class="texto">
+                        Os animais adoram brincar, pois isso os mantém ativos, felizes e mentalmente estimulados.
+                    </div>
+                </div>
+                <div class="imagem-container">
+                    <img src="./img/golden.jpeg" alt="Cuidados" class="imagem">
+                    <h2 class="titulo">CUIDADOS</h2>
+                    <div class="texto">
+                        Os animais merecem cuidados especiais para garantir sua saúde e bem-estar, proporcionando uma vida longa e feliz.
+                    </div>
+                </div>
+                <div class="imagem-container">
+                    <img src="./img/pitbull.jpeg" alt="Saúde" class="imagem">
+                    <h2 class="titulo">SAÚDE</h2>
+                    <div class="texto">
+                        Os animais são nossos companheiros leais, e cuidar da saúde deles é essencial para garantir uma vida longa e feliz ao nosso lado.
+                    </div>
+                </div>
+            </div>
+            <h2>O melhor para o nosso amigo cão</h2>
+            <hr>
+            <p>Nosso objetivo é proporcionar aos nossos amigos de quatro patas a melhor experiência possível, com cuidados, carinho e produtos de alta qualidade que garantem saúde e felicidade.</p>
+        </div>
+
+        <div class="esquerda">
+            <iframe class="video" src="https://www.youtube.com/embed/DX_AfhT2sMQ?si=UIQ78_uZbIj4_b7P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p style="font-size: 17.5px; font-weight: bold;">Brinque sempre com seu cãozinho!</p>
+            <a href="boletim.html"><img src="./img/Plano Mensal.png" alt="Plano Mensal" class="plano-mensal"></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Atendimento: atendimento@afonsopetshop.com • (0XX) 99999-9999 / (0XX) 88888-8888</p>
+    </footer>
+
+    <script>
+        // Pré-carregar as imagens para melhor desempenho
+        const imagens = ['./img/bonito.jpeg', './img/golden.jpeg', './img/pitbull.jpeg'];
+        imagens.forEach(imagem => {
+            const img = new Image();
+            img.src = imagem;
+        });
+    </script>
+</body>
+</html>

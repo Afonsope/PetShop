@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navegation">
+        <img src="./img/Logo_Petshop_marrom_ilustrado-removebg-preview.png" alt="logo" class="logo">
+
+        <img src="./img/Promoção Tosa Higiênica.png" alt="Tosa" class="tosa">
+
+        <div class="social-container">
+
+            <div class="nos-acompanhe">
+                <a href="boletim.html"><button class="assinatura">Assine o boletim anual</button></a>
+                <p>Nos acompanhe:</p>
+            </div>
+
+            <ul>
+                <li><a href="https://www.facebook.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new" /></a></li>
+                <li><a href="https://x.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a></li>
+                <li><a href="https://www.youtube.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/youtube-squared.png" alt="youtube-squared" /></a></li>
+                <li><a href="https://br.pinterest.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/pinterest--v1.png" alt="pinterest--v1" /></a></li>
+                <li><a href="https://www.instagram.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <style>
+           * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .navegation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .tosa {
+            width: 400px;
+            height: 175px;
+            border-radius: 10px;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 20px;
+        }
+
+        .nos-acompanhe {
+            text-align: right;
+        }
+
+        .assinatura {
+            padding: 10px 15px;
+            color: red;
+            background-color: #fff;
+            border: 1px solid red;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .assinatura:hover {
+            background-color: red;
+            color: #fff;
+        }
+
+        .social-container ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .social-container ul li {
+            margin: 0 5px;
+        }
+
+        .social-container ul li img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-container ul li img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .home {
+            background-color: rgb(140, 140, 140);
+        }
+
+        nav ul a:hover {
+            background-color: #683535;
+        }
+
+        </style>
+
+    </div>
+
+    <nav class="links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="produtos.html"class="home">Produtos</a></li>
+            <li><a href="banho-e-tosa.html">Banho e tosa</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+        </div>
+    </nav>
+   
+
+    <table border="1">
+        <tr>
+            <th colspan="4" class="produtos" style="font-family: Arial, Helvetica, sans-serif;padding: 20px;border: 4px solid rgb(41, 41, 41);font-size: 25px;background-color: rgb(0, 0, 0);">PRODUTOS</th>
+        </tr>
+
+        <tr style="background-color: rgb(32, 59, 75);color: white;font-family: Arial, Helvetica, sans-serif;border: 5px solid black;font-size: 18px;">
+            <th style="padding: 20px;">PORTE</th>
+            <th colspan="2" style="background-color: rgb(28, 28, 28);">MARCA</th>
+            <th style="background-color: rgb(12, 77, 12);">PREÇO</th>
+        </tr>
+
+        <tr style="font-family: Arial, Helvetica, sans-serif;">
+            <th rowspan="2" style="font-size: 22px;background-color: rgb(32, 59, 75);border: 5px solid black;color: white;"><B><br>P<br>E<br>Q<br>U<br>E<br>N<br>O</B></th>
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;border: 5px solid black;"><B><i>PREMIER<hr>Cães Adultos <br>Frango <br>15kg</i></B></td>
+            <td style="text-align: center; vertical-align: middle;border: 5px solid black;"><img src="./img/ração1.jpeg" alt="" class="img"></td>
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;background-color: rgb(12, 77, 12);border: 5px solid black;font-size: 25px;color: white;"><b>R$ 247,53</b></td>
+        </tr>
+
+        <tr style="font-family: Arial, Helvetica, sans-serif;">
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;border: 5px solid black;"><B><i>GOLDEN <hr>Mini Bits Para Cães Filhotes Carne e Arroz <br> 3kg</i></B></td>
+            <td style="text-align: center; vertical-align: middle;border: 5px solid black;"><img src="./img/ração2.jpeg" alt="" class="img"></td>
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;background-color: rgb(12, 77, 12);border: 5px solid black;font-size: 25px;color: white;"><b>R$ 62,90</b></td>
+        </tr>
+
+        <tr style="font-family: Arial, Helvetica, sans-serif;">
+            <th rowspan="2" style="font-size: 22px;background-color: rgb(32, 59, 75);border: 5px solid black;color: white;"><B><br>M<br>É<br>D<br>I<br>O</B></th>
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;border: 5px solid black;"><B><i>ORIGENS <hr>Light para Cães Adultos Frango e Cereais <br>15kg</i></B></td>
+            <td style="text-align: center; vertical-align: middle;border: 5px solid black;"><img src="img/raçaõ origens.jpg" alt="" class="img"></td>
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;background-color: rgb(12, 77, 12);border: 5px solid black;font-size: 25px;color: white;"><b>R$ 178,90</b></td>
+        </tr>
+
+        <tr style="font-family: Arial, Helvetica, sans-serif;">
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;border: 5px solid black;"><B><i>GRAN PLUS <hr> Cães Adultos Gourmet <br>Ovelha & Arroz <br>15kg</i></B></td>
+            <td style="text-align: center; vertical-align: middle;border: 5px solid black;"><img src="img/ração granplus.jpg" alt="" class="img"></td>
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;background-color: rgb(12, 77, 12);border: 5px solid black;font-size: 25px;color: white;"><b>R$ 133,17</b></td>
+        </tr>
+
+        <tr style="font-family: Arial, Helvetica, sans-serif;">
+            <th rowspan="2" style="font-size: 22px;background-color: rgb(32, 59, 75);border: 5px solid black;color: white;"><B><br>G<br>R<br>A<br>N<br>D<br>E</B></th>
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;border: 5px solid black;"><B><i>MAX <hr> Cães Adultos <br>Frango e Arroz <br>15kg </i></B></td>
+            <td style="text-align: center; vertical-align: middle;border: 5px solid black;"><img src="img/ração max.webp" alt="" class="img"></td>
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;background-color: rgb(12, 77, 12);border: 5px solid black;font-size: 25px;color: white;"><b>R$ 165,90</b></td>
+        </tr>
+
+        <tr style="font-family: Arial, Helvetica, sans-serif;">
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;border: 5px solid black;"><B><i>HILL´S <hr>Diet Cães Adultos <br>Frango <br>12kg</i></B></td>
+            <td style="text-align: center; vertical-align: middle;border: 5px solid black;"><img src="img/ração hill´s.jpg" alt="" class="img" style="height: 220px;width: auto;"></td>
+            <td style="text-align: center; vertical-align: middle;font-size: 20px;background-color: rgb(12, 77, 12);border: 5px solid black;font-size: 25px;color: white;"><b>R$ 539,99</b></td>
+        </tr>
+    </table>
+
+    <style>
+        .produtos {
+            color: white;
+            background-color: gray;
+        }
+
+        .img {
+            width: 200px;
+        }
+
+        td {
+            width:300px
+        }
+
+        table {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+</body>
+
+</html>

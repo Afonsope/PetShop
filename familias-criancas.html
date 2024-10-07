@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperamento das Raças de Cães</title>
+    <style>
+        /* Estilos para o corpo e container */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para a cabeçalho e título */
+        h1 {
+            font-size: 2.5em;
+            color: #444;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para cada raça */
+        .raça {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .raça img {
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .raça h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .raça p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Estilos para o temperamento */
+        .temperamento {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .amigavel {
+            color: #fff;
+            background-color: #28a745; /* Verde */
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .sociavel {
+            color: #fff;
+            background-color: #77ff07; /* Amarelo */
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .meio-sociavel {
+            color: #fff;
+            background-color: #6bb1fc; /* Azul */
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .energetico {
+            color: #fff;
+            background-color: #dc3545; /* Vermelho */
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* Estilos para o link de volta */
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-link a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-link a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navegation">
+        <img src="./img/Logo_Petshop_marrom_ilustrado-removebg-preview.png" alt="logo" class="logo">
+
+        <img src="./img/Promoção Tosa Higiênica.png" alt="Tosa" class="tosa">
+
+        <div class="social-container">
+
+            <div class="nos-acompanhe">
+                <a href="boletim.html"><button class="assinatura">Assine o boletim anual</button></a>
+                <p>Nos acompanhe:</p>
+            </div>
+
+            <ul>
+                <li><a href="https://www.facebook.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new" /></a></li>
+                <li><a href="https://x.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a></li>
+                <li><a href="https://www.youtube.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/youtube-squared.png" alt="youtube-squared" /></a></li>
+                <li><a href="https://br.pinterest.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/pinterest--v1.png" alt="pinterest--v1" /></a></li>
+                <li><a href="https://www.instagram.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <style>
+            .logo {
+                width: 200px;
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+
+            .tosa {
+                width: 400px;
+                height: 175px;
+            }
+
+            .navegation {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .social-container {
+                display: flex;
+                /* Ativa o Flexbox */
+                justify-content: flex-end;
+                align-items: flex-end;
+                flex-direction: column;
+                padding-right: 20px;
+            }
+
+            .nos-acompanhe {
+                padding-right: 37px;
+            }
+
+            .assinatura {
+                padding: 5px;
+                color: red;
+                background-color: #fff;
+                border-color: red;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            ul {
+                list-style: none;
+                /* Remove os marcadores padrão da lista */
+                padding-left: 0px;
+                margin-top: 1px;
+                display: flex;
+                /* Ativa o Flexbox */
+                justify-content: right;
+            }
+
+            ul li {
+                padding: 2.5px;
+                text-align: right;
+                /* Centraliza o texto dentro dos itens */
+            }
+        </style>
+
+    </div>
+
+    <nav class="links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="banho-e-tosa.html">Banho e tosa</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+        </div>
+    </nav>
+    <style>
+        nav {
+            width: 100%;
+            /* Garante que o nav ocupe 100% da largura */
+            background-color: black;
+            overflow: auto;
+            clear: both;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            /* Remove os marcadores padrão da lista */
+            padding-left: 0px;
+            margin-top: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            display: flex;
+            /* Ativa o Flexbox */
+            justify-content: space-between;
+            /* Distribui os itens uniformemente */
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            /* Permite que os itens cresçam igualmente */
+            text-align: center;
+            /* Centraliza o texto dentro dos itens */
+        }
+
+        nav ul a {
+            color: #fff;
+            text-decoration: none;
+            /* Remove a sublinha padrão */
+            font-size: 1.2em;
+            padding: 8px 50px;
+            line-height: 2em;
+            display: block;
+            /* Torna o link um bloco para preencher todo o item da lista */
+        }
+
+        .home {
+            background-color: rgb(140, 140, 140);
+        }
+
+        nav.links a:hover {
+            background-color: #683535;
+        }
+    </style>
+
+<div class="container">
+    <h1>Opinião das Famílias sobre as Raças</h1>
+
+    <!-- Raça 1: Labrador Retriever -->
+    <div class="raça">
+        <img src="img/Labrador_Retriever.webp" alt="Labrador Retriever">
+        <div>
+            <h2>Labrador Retriever</h2>
+            <p>As famílias com crianças adoram os Labradores por serem extremamente amigáveis e pacientes.</p>
+            <p class="classificacao sociavel">Classificação: Sociável</p>
+        </div>
+    </div>
+
+    <!-- Raça 2: Poodle -->
+    <div class="raça">
+        <img src="img/poodle_cachorro.png" alt="Poodle">
+        <div>
+            <h2>Poodle</h2>
+            <p>Os Poodles são conhecidos por serem carinhosos e ótimos companheiros para crianças, embora possam ser um pouco reservados no início.</p>
+            <p class="classificacao meio-sociavel">Classificação: Meio Sociável</p>
+        </div>
+    </div>
+
+    <!-- Raça 3: Dachshund -->
+    <div class="raça">
+        <img src="img/Dachshund.jpg" alt="Dachshund">
+        <div>
+            <h2>Dachshund (Salsicha)</h2>
+            <p>Os Dachshunds são curiosos e divertidos, mas algumas famílias relatam que eles podem ser teimosos e nem sempre têm paciência com crianças pequenas.</p>
+            <p class="classificacao meio-sociavel">Classificação: Meio Sociável</p>
+        </div>
+    </div>
+
+    <!-- Raça 4: Border Collie -->
+    <div class="raça">
+        <img src="img/Border-Collie-laying-grass.webp" alt="Border Collie">
+        <div>
+            <h2>Border Collie</h2>
+            <p>Border Collies são muito inteligentes e enérgicos, o que pode ser ótimo para crianças ativas, mas podem precisar de supervisão devido à sua energia.</p>
+            <p class="classificacao meio-sociavel">Classificação: Meio Sociável</p>
+        </div>
+    </div>
+
+    <!-- Raça 5: Beagle -->
+    <div class="raça">
+        <img src="img/beagle-caracteristicas-fisicas.webp" alt="Beagle">
+        <div>
+            <h2>Beagle</h2>
+            <p>Beagles são amigáveis e curiosos, tornando-se ótimos para famílias com crianças. Eles adoram brincar e são muito sociáveis.</p>
+            <p class="classificacao sociavel">Classificação: Sociável</p>
+        </div>
+    </div>
+
+    <!-- Raça 6: Bulldog Inglês -->
+    <div class="raça">
+        <img src="img/Bulldog-Inglês_607907102.jpg" alt="Bulldog Inglês">
+        <div>
+            <h2>Bulldog Inglês</h2>
+            <p>Os Bulldogs Ingleses são calmos e dóceis, e são conhecidos por serem excelentes com crianças devido à sua natureza paciente.</p>
+            <p class="classificacao sociavel">Classificação: Sociável</p>
+        </div>
+    </div>
+
+    <!-- Raça 7: Golden Retriever -->
+    <div class="raça">
+        <img src="img/golden retriever.jpeg" alt="Golden Retriever">
+        <div>
+            <h2>Golden Retriever</h2>
+            <p>Golden Retrievers são considerados uma das melhores raças para famílias com crianças por serem gentis, inteligentes e obedientes.</p>
+            <p class="classificacao sociavel">Classificação: Sociável</p>
+        </div>
+    </div>
+
+    <!-- Raça 8: Husky Siberiano -->
+    <div class="raça">
+        <img src="img/Husky Siberiano.jpeg" alt="Husky Siberiano">
+        <div>
+            <h2>Husky Siberiano</h2>
+            <p>Huskies Siberianos são enérgicos e sociáveis, mas sua independência pode ser um desafio para famílias com crianças pequenas.</p>
+            <p class="classificacao meio-sociavel">Classificação: Meio Sociável</p>
+        </div>
+    </div>
+
+    <!-- Raça 9: Rottweiler -->
+    <div class="raça">
+        <img src="img/Rottweiler.avif" alt="Rottweiler">
+        <div>
+            <h2>Rottweiler</h2>
+            <p>Rottweilers são leais e protetores, e com treinamento adequado, podem ser excelentes com crianças. No entanto, devido à sua natureza protetora, requerem supervisão.</p>
+            <p class="classificacao meio-sociavel">Classificação: Meio Sociável</p>
+        </div>
+    </div>
+
+    <!-- Raça 10: Shih Tzu -->
+    <div class="raça">
+        <img src="img/shih-tzu-temperament.jpeg.jpg" alt="Shih Tzu">
+        <div>
+            <h2>Shih Tzu</h2>
+            <p>Shih Tzus são afetuosos e sociáveis, e geralmente são bons com crianças. Eles adoram interagir e brincar.</p>
+            <p class="classificacao sociavel">Classificação: Sociável</p>
+        </div>
+    </div>
+
+    <!-- Link de volta -->
+    <div class="back-link">
+        <a href="index.html">Voltar para a página inicial</a>
+    </div>
+</div>
+</body>
+
+</html>

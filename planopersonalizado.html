@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .navegation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .tosa {
+            width: 400px;
+            height: 175px;
+            border-radius: 10px;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 20px;
+        }
+
+        .nos-acompanhe {
+            text-align: right;
+        }
+
+        .assinatura {
+            padding: 10px 15px;
+            color: rgb(0, 0, 0);
+            background-color: #ff0000;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .assinatura:hover {
+            background-color: red;
+            color: #fff;
+        }
+
+        .social-container ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .social-container ul li {
+            margin: 0 5px;
+        }
+
+        .social-container ul li img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-container ul li img:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            width: 100%;
+            background-color: black;
+            overflow: auto;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .home {
+            background-color: rgb(140, 140, 140);
+        }
+
+        nav ul a:hover {
+            background-color: #683535;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pricing-table th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .pricing-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .plan-name {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navegation">
+        <img src="./img/Logo_Petshop_marrom_ilustrado-removebg-preview.png" alt="logo" class="logo">
+
+        <img src="./img/Promoção Tosa Higiênica.png" alt="Tosa" class="tosa">
+
+        <div class="social-container">
+
+            <div class="nos-acompanhe">
+                <a href="boletim.php"><button class="assinatura">Assine o boletim mensal</button></a>
+                <p>Nos acompanhe:</p>
+            </div>
+
+            <ul>
+                <li><a href="https://www.facebook.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new" /></a></li>
+                <li><a href="https://x.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1" /></a></li>
+                <li><a href="https://www.youtube.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/youtube-squared.png" alt="youtube-squared" /></a></li>
+                <li><a href="https://br.pinterest.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/pinterest--v1.png" alt="pinterest--v1" /></a></li>
+                <li><a href="https://www.instagram.com/"><img width="35" height="35"
+                            src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1" /></a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <nav class="links" style="margin-bottom: 15px;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem-somos.html">Quem somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="banho-e-tosa.html">Banho e tosa</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <a href="boletim.html"><button style="padding: 10px 15px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+        border: 3px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+        font-size: 15px;
+        font-weight: bold;">
+        Voltar
+    </button></a>
+
+    <h2>Monte seu Plano Personalizado</h2>
+
+    <table class="pricing-table">
+        <thead>
+            <tr>
+                <th>Serviço</th>
+                <th>Quantidade por Mês</th>
+                <th>Valor Mensal (R$)</th>
+                <th>Valor Anual (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="plan-name">Banho</td>
+                <td>
+                    <button onclick="decrementarQuantidade('banho')" class="quantidade-btn">-</button>
+                    <span id="banho-quantity">0</span>
+                    <button onclick="incrementarQuantidade('banho')" class="quantidade-btn">+</button>
+                </td>
+                <td>50,00</td>
+                <td><span id="banho-total">0,00</span></td>
+            </tr>
+            <tr>
+                <td class="plan-name">Tosa Completa</td>
+                <td>
+                    <button onclick="decrementarQuantidade('tosa')" class="quantidade-btn">-</button>
+                    <span id="tosa-quantity">0</span>
+                    <button onclick="incrementarQuantidade('tosa')" class="quantidade-btn">+</button>
+                </td>
+                <td>100,00</td>
+                <td><span id="tosa-total">0,00</span></td>
+            </tr>
+            <tr>
+                <td class="plan-name">Corte de Unhas</td>
+                <td>
+                    <button onclick="decrementarQuantidade('corte-unhas')" class="quantidade-btn">-</button>
+                    <span id="corte-unhas-quantity">0</span>
+                    <button onclick="incrementarQuantidade('corte-unhas')" class="quantidade-btn">+</button>
+                </td>
+                <td>20,00</td>
+                <td><span id="corte-unhas-total">0,00</span></td>
+            </tr>
+            <tr>
+                <td class="plan-name">Limpeza de Ouvidos</td>
+                <td>
+                    <button onclick="decrementarQuantidade('limpeza-ouvidos')" class="quantidade-btn">-</button>
+                    <span id="limpeza-ouvidos-quantity">0</span>
+                    <button onclick="incrementarQuantidade('limpeza-ouvidos')" class="quantidade-btn">+</button>
+                </td>
+                <td>30,00</td>
+                <td><span id="limpeza-ouvidos-total">0,00</span></td>
+            </tr>
+            <tr>
+                <td class="plan-name">Escovação de Dentes</td>
+                <td>
+                    <button onclick="decrementarQuantidade('escovacao-dentes')" class="quantidade-btn">-</button>
+                    <span id="escovacao-dentes-quantity">0</span>
+                    <button onclick="incrementarQuantidade('escovacao-dentes')" class="quantidade-btn">+</button>
+                </td>
+                <td>30,00</td>
+                <td><span id="escovacao-dentes-total">0,00</span></td>
+            </tr>
+            <tr>
+                <td class="plan-name">Desembaraçamento</td>
+                <td>
+                    <button onclick="decrementarQuantidade('desembaraco')" class="quantidade-btn">-</button>
+                    <span id="desembaraco-quantity">0</span>
+                    <button onclick="incrementarQuantidade('desembaraco')" class="quantidade-btn">+</button>
+                </td>
+                <td>80,00</td>
+                <td><span id="desembaraco-total">0,00</span></td>
+            </tr>
+            <tr>
+                <td class="plan-name">Deslanagem</td>
+                <td>
+                    <button onclick="decrementarQuantidade('deslanagem')" class="quantidade-btn">-</button>
+                    <span id="deslanagem-quantity">0</span>
+                    <button onclick="incrementarQuantidade('deslanagem')" class="quantidade-btn">+</button>
+                </td>
+                <td>85,00</td>
+                <td><span id="deslanagem-total">0,00</span></td>
+            </tr>
+            <tr>
+                <td class="plan-name">Tosa Higiênica</td>
+                <td>
+                    <button onclick="decrementarQuantidade('tosa-higienica')" class="quantidade-btn">-</button>
+                    <span id="tosa-higienica-quantity">0</span>
+                    <button onclick="incrementarQuantidade('tosa-higienica')" class="quantidade-btn">+</button>
+                </td>
+                <td>60,00</td>
+                <td><span id="tosa-higienica-total">0,00</span></td>
+            </tr>
+            <tr>
+                <td class="plan-name">Tosa Estética</td>
+                <td>
+                    <button onclick="decrementarQuantidade('tosa-estetica')" class="quantidade-btn">-</button>
+                    <span id="tosa-estetica-quantity">0</span>
+                    <button onclick="incrementarQuantidade('tosa-estetica')" class="quantidade-btn">+</button>
+                </td>
+                <td>150,00</td>
+                <td><span id="tosa-estetica-total">0,00</span></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><strong>Total Mensal</strong></td>
+                <td><span id="total-mensal">0,00</span></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><strong>Total Anual</strong></td>
+                <td><span id="total-anual">0,00</span></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script>
+        function incrementarQuantidade(id) {
+            const quantidadeElement = document.getElementById(`${id}-quantity`);
+            let quantidade = parseInt(quantidadeElement.textContent);
+            quantidade++;
+            quantidadeElement.textContent = quantidade;
+            calcularTotal();
+        }
+    
+        function decrementarQuantidade(id) {
+            const quantidadeElement = document.getElementById(`${id}-quantity`);
+            let quantidade = parseInt(quantidadeElement.textContent);
+            if (quantidade > 0) {
+                quantidade--;
+                quantidadeElement.textContent = quantidade;
+                calcularTotal();
+            }
+        }
+    
+        function calcularTotal() {
+            const valores = {
+                'banho': 50.00,
+                'tosa': 100.00,
+                'corte-unhas': 20.00,
+                'limpeza-ouvidos': 30.00,
+                'escovacao-dentes': 30.00,
+                'desembaraco': 80.00,
+                'deslanagem': 85.00,
+                'tosa-higienica': 60.00,
+                'tosa-estetica': 150.00
+            };
+    
+            let totalMensal = 0;
+            Object.keys(valores).forEach(key => {
+                const quantidade = parseInt(document.getElementById(`${key}-quantity`).textContent);
+                const valor = valores[key];
+                totalMensal += quantidade * valor;
+                document.getElementById(`${key}-total`).textContent = (quantidade * valor).toFixed(2);
+            });
+    
+            document.getElementById('total-mensal').textContent = totalMensal.toFixed(2);
+            document.getElementById('total-anual').textContent = (totalMensal * 12).toFixed(2);
+        }
+    
+        calcularTotal(); // Calcular total inicial ao carregar a página
+    </script>
+    
+    <style>
+        .quantidade-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    
+        .quantidade-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+
+</body>
+
+</html>
